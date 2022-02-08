@@ -1,0 +1,73 @@
+.home
+    &__wrap
+        width: 100%
+        padding: 1em
+        align-self: flex-start
+        justify-content: center !important
+        display: grid !important
+        grid-template-columns: repeat(auto-fill , minmax(320px , 1fr))
+        grid-gap: 5px
+        flex-grow: 1 !important
+        overflow-y: auto !important
+        align-items: flex-start
+        &--loading
+            grid-row-gap: 56px
+        &--empty
+            flex-grow: 1
+.card-content
+    padding: 0 1em
+    height: 80px
+    overflow: hidden
+
+.pagination
+    &--center
+        >ul
+            justify-content: center
+            align-items: center
+
+@media screen and ( max-width:768px)
+    .home
+        &__wrap
+            grid-template-columns: repeat(auto-fill , minmax(290px , 1fr))
+    .dashboard
+        &__wrapper
+            padding: 0
+            &__body
+                width: 100%
+                margin: 0
+
+.dashboard
+    &__wrapper
+        padding: 16px
+        position: relative
+        margin: auto
+        border-radius: 12px
+        // background: #202125
+        height: 100vh
+        width: 100vw
+        display: flex
+        flex-direction: row
+        &__body
+            display: flex
+            border-radius: 8px
+            background: #fff
+            flex-grow: 1
+            flex-direction: column
+            transition: all 0.25s ease-in-out
+
+    &__section
+        padding: 0.6em
+        // background: #000adc
+        border-radius: 8px
+        display: flex
+        flex-grow: 1
+        overflow: hidden
+        flex-direction: column
+        &__view
+            overflow: auto
+            flex-grow: 1
+            flex-direction: column
+            display: flex
+            // background: #0adc00
+
+@media screen and ( max-width:768px)

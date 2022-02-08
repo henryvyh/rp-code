@@ -1,0 +1,43 @@
+.dashboard
+    &__nav
+        position: absolute
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        display: none
+        z-index: 1200
+        &--show
+            display: flex
+        &--wrapper
+            width: 80%
+            margin: 0 auto
+            max-height: 80%
+            background: #444444
+            padding: .4em
+            display: flex
+            flex-direction: row
+            border-radius: 8px
+            position: absolute
+            top: 56px
+            padding: 1em
+            z-index: 12
+            left: 10%
+        &--detail
+            flex-grow: 1
+            display: flex
+            flex-direction: column
+            padding: 0 1em
+            width: calc( 100% - 280px )
+        &--category
+            flex-grow: 1
+            overflow: auto
+            width: 280px
+        &__close
+            background: #423f3f25
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            z-index: 11
